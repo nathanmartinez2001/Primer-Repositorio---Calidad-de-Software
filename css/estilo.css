@@ -1,0 +1,84 @@
+/*Estos son los estilos para el div principal
+se establece la altura y anchura de la calculadora
+el estilo y radio de los bordes. El padding (distancia entre
+bordes y contenido del div. Se asigna el color de la parte exterior y
+, por ultimo, se le da una posicion relativa. Esto ultimo es lo mas importante
+ya que está relacionado con otro div.*/
+#calculadora-id {
+    height: 360px;
+    width: 600px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: gray;
+    position: relative;
+}
+
+/*Estos son los estilos que se dan al formulario (que visualmente hablando,
+son el interior de la calculadora. Esto se encarga solamente de ajustar
+el tamaño del formulario y dar el color de la parte interior de la calculadora*/
+#calculadora-id form{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+/*Estos son los estilos para los input de numeros. Se controla su anchura, el tipo de cursor
+para que sea el de una mano, se cambia el tipo de letra, el color y el tamaño de esta. Igualmente
+se asigna el grosor de los margenes*/
+#calculadora-id input[type=number]{
+    width: 23%;
+    cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: black;
+    font-size: 25px;
+    padding: 18px;
+    margin: 3px;
+}
+
+/*Estos son los estilos para el boton de enviado. Tiene las mismas especificaciones que el campo de los input*/
+#calculadora-id input[type=submit]{
+    width: 29%;
+    cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: black;
+    font-size: 25px;
+    padding: 18px;
+    margin: 3px;
+}
+
+/*Estos son los estilos para la opcion de select. Sus especificaciones son las mismas que con los otros dos*/
+#calculadora-id select {
+    width: 30%;
+    cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: black;
+    font-size: 25px;
+    padding: 18px;
+    margin: 3px;
+}
+
+/*Estos son los estilos para el campo textfield donde se muestra el resultado de la operacion
+Su altura y anchura superan por mucho al de los otros campos. El padding está en 10px para que abarque
+casi la totalidad de la mitad derecha de la calculadora. Tambien se estableció el color de fondo y la alineacion
+del texto, asi como el tamaño de la fuente. Lo mas importante es la posicion, colocada como absoluta. Al hacer esto, la posicion de este campo,
+creado con un div en el archivo php, se vuelve relativa a la del primer div. Asi, junto a las especificaciones top,
+left y right pudo posicionarse el campo texfield sobre la calculadora*/
+
+#calculadora-id input[type=textfield]{
+    height: 328px;
+    width: 385px;
+    padding: 10px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-left: 198px;
+    margin-top: 12px;
+    font-size: 100px;
+    text-align: center;
+}
